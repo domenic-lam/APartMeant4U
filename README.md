@@ -16,4 +16,4 @@ Develop a web app that allows users to view and annotate craigslist posts
   Navigate to project/front folder in second cmd\
   In both cmds, enter npm install to install dependencies\
   In both cmds, enter npm start to start the project\
-  The project should open, otherwise navigate to: http://localhost:3000 in your browser.
+  The project should open, otherwise navigate to: http://localhost:3001 in your browser.
