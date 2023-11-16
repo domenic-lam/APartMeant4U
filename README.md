@@ -1,7 +1,7 @@
 # APartMeant4U
 Description: Search our listings and find your dream apartment!
 # Author: 
-Ely Lam
+Domenic (Ely) Lam
 # Class:
 Made for: https://johnguerra.co/classes/webDevelopment_fall_2020/
 # Project Objective: 
