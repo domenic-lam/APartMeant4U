@@ -72,17 +72,13 @@ router.post("/deleteUser", async (req, res) => {
 });
 
 router.get("/logout", (req, res) => {
-  // Based on passport documentation, I think logout() will also clear the user's login session.
-  // So you don't need to call session.destroy here.
   req.logout();
-  req.session.destroy();
   res.redirect("/?msg=Signed out successfully.");
 });
 
 // Seems like you are doing something else here. I suggest that we should move /getListings, /newFav, and /favorites to another router.
 router.get("/getListings", async (req, res) => {
-  // Okay, I see that you await the promise here. Mostly, for the reabability, we await at the line of code that returns the promise object.
-  const listings = await aptDB.getListings();
+  const listings = aptDB.getListings();
   res.json(listings); // get apt listings
   console.log("Fetch listings", listings);
 });
@@ -99,8 +95,6 @@ router.get("/favorites", async (req, res) => {
   res.json(favorites); // get apt listings
   console.log("Fetch favorites", favorites);
 });
-
-
 
 
 module.exports = router;
